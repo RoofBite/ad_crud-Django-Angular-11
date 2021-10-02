@@ -1,0 +1,42 @@
+
+<div class="row">
+  <div class="col-3"></div>
+
+  <div class="col-6 text-center">
+    <div class="card mt-3 bg-dark text-white">
+      <div class="card-body">
+            
+            <h5>Offer details</h5>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="col-3"></div>
+</div>
+
+<div *ngIf="offer">
+  <div class="row ">
+    <div class="col-3"></div>
+
+    <div class="col-6 text-center">
+      <div class="card mt-3 bg-light">
+        <div class="card-body">
+          <h5>Offer ID: {{ offer.id }}</h5>
+          <h3>Title: {{ offer.title }}</h3>
+          <h5>Price: {{ offer.price }}</h5>
+          <h5>Description: {{ offer.description }}</h5>
+          <h5>Created date: {{ offer.created_at }}</h5>
+          <h5>Category: {{ offer.category.name }}</h5>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="col-3"></div>
+  </div>
+
+ 
+
+</div>
+
